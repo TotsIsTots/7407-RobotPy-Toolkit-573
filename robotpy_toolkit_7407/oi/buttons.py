@@ -10,7 +10,7 @@ from robotpy_toolkit_7407.oi.joysticks import Joysticks
 class Button:
     controller_id: int
 
-    def __call__(self) -> commands.button.Button: ...
+    def __call__(self) -> commands.button.JoystickButton: ...
 
 
 @dataclass
@@ -20,7 +20,7 @@ class DefaultButton(Button):
     """
     button_id: int
 
-    def __call__(self) -> commands.button.Button:
+    def __call__(self) -> commands.button.JoystickButton:
         if self.button_id < 0:
             return commands.button.Button(
                 lambda: Joysticks.joysticks[self.controller_id].getRawAxis(-self.button_id) > 0.8
@@ -37,7 +37,7 @@ class AxisButton(Button):
     range_min: float = -1
     range_max: float = 1
 
-    def __call__(self) -> commands.button.Button:
-        return commands.button.Button(
+    def __call__(self) -> commands.button.JoystickButton:
+        return commands.button.JoystickButton(
             lambda: self.range_min <= Joysticks.joysticks[self.controller_id].getRawAxis(self.axis_id) <= self.range_max
         )

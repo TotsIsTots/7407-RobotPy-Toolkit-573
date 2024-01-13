@@ -369,13 +369,13 @@ files = [
 [package.dependencies]
 pint = ">=0.11.0"
 pynetconsole = ">=2.0.2,<2.1.0"
-pyntcore = ">=2023.1.1.0,<2024"
+pyntcore = ">=2023.1.1.0"
 pytest = ">=3.9"
 pytest-reraise = "*"
-robotpy-hal = ">=2023.1.1.0,<2024"
-robotpy-installer = ">=2023.0.0,<2024"
-robotpy-wpiutil = ">=2023.1.1.0,<2024"
-wpilib = ">=2023.1.1.0,<2024"
+robotpy-hal = ">=2023.1.1.0"
+robotpy-installer = ">=2023.0.0"
+robotpy-wpiutil = ">=2023.1.1.0"
+wpilib = ">=2023.1.1.0"
 
 [[package]]
 name = "pynacl"
@@ -455,8 +455,8 @@ files = [
 ]
 
 [package.dependencies]
-robotpy-wpinet = ">=2023.4.1,<2023.5.0"
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+robotpy-wpinet = ">=2023.4.1"
+robotpy-wpiutil = ">=2023.4.1"
 
 [[package]]
 name = "pytest"
@@ -510,28 +510,28 @@ files = [
 ]
 
 [package.dependencies]
-pyfrc = {version = ">=2023.0.1,<2024.0.0", markers = "platform_machine != \"armv7l\""}
+pyfrc = {version = ">=2023.0.1", markers = "platform_machine != \"armv7l\""}
 pyntcore = "2023.4.1.1"
 robotpy-commands-v2 = {version = "2023.4.1.0", optional = true, markers = "extra == \"commands2\""}
 robotpy-hal = "2023.4.1.0"
 robotpy-halsim-gui = {version = "2023.4.1.0", markers = "platform_machine != \"armv7l\""}
-robotpy-installer = {version = ">=2023.0.2,<2024.0.0", markers = "platform_machine != \"armv7l\""}
-robotpy-wpilib-utilities = ">=2023.0.0,<2024"
+robotpy-installer = {version = ">=2023.0.2", markers = "platform_machine != \"armv7l\""}
+robotpy-wpilib-utilities = ">=2023.0.0"
 robotpy-wpimath = "2023.4.1.0"
 robotpy-wpiutil = "2023.4.1.0"
 wpilib = "2023.4.1.0"
 
 [package.extras]
-all = ["numpy", "pyfrc (>=2023.0.1,<2024.0.0)", "pyntcore (==2023.4.1.1)", "robotpy-apriltag (==2023.4.1.0)", "robotpy-commands-v2 (==2023.4.1.0)", "robotpy-cscore (==2023.4.1.0)", "robotpy-ctre (>=2023.0.0,<2024.0.0)", "robotpy-hal (==2023.4.1.0)", "robotpy-halsim-ds-socket (==2023.4.1.0)", "robotpy-halsim-gui (==2023.4.1.0)", "robotpy-halsim-ws (==2023.4.1.0)", "robotpy-installer (>=2023.0.2,<2024.0.0)", "robotpy-navx (>=2023.0.1,<2024.0.0)", "robotpy-opencv", "robotpy-pathplannerlib (>=2023.0.0,<2024.0.0)", "robotpy-photonvision (>=2023.1.2,<2024.0.0)", "robotpy-playingwithfusion (>=2023.0.0,<2024.0.0)", "robotpy-rev (>=2023.1.1,<2024.0.0)", "robotpy-wpilib-utilities (>=2023.0.0,<2024)", "robotpy-wpimath (==2023.4.1.0)", "robotpy-wpiutil (==2023.4.1.0)", "wpilib (==2023.4.1.0)"]
+all = ["numpy", "pyfrc (>=2023.0.1)", "pyntcore (==2023.4.1.1)", "robotpy-apriltag (==2023.4.1.0)", "robotpy-commands-v2 (==2023.4.1.0)", "robotpy-cscore (==2023.4.1.0)", "robotpy-ctre (>=2023.0.0)", "robotpy-hal (==2023.4.1.0)", "robotpy-halsim-ds-socket (==2023.4.1.0)", "robotpy-halsim-gui (==2023.4.1.0)", "robotpy-halsim-ws (==2023.4.1.0)", "robotpy-installer (>=2023.0.2)", "robotpy-navx (>=2023.0.1)", "robotpy-opencv", "robotpy-pathplannerlib (>=2023.0.0)", "robotpy-photonvision (>=2023.1.2)", "robotpy-playingwithfusion (>=2023.0.0)", "robotpy-rev (>=2023.1.1)", "robotpy-wpilib-utilities (>=2023.0.0)", "robotpy-wpimath (==2023.4.1.0)", "robotpy-wpiutil (==2023.4.1.0)", "wpilib (==2023.4.1.0)"]
 apriltag = ["numpy", "robotpy-apriltag (==2023.4.1.0)", "robotpy-opencv"]
 commands2 = ["robotpy-commands-v2 (==2023.4.1.0)"]
 cscore = ["numpy", "robotpy-cscore (==2023.4.1.0)", "robotpy-opencv"]
-ctre = ["robotpy-ctre (>=2023.0.0,<2024.0.0)"]
-navx = ["robotpy-navx (>=2023.0.1,<2024.0.0)"]
-pathplannerlib = ["robotpy-pathplannerlib (>=2023.0.0,<2024.0.0)"]
-photonvision = ["robotpy-photonvision (>=2023.1.2,<2024.0.0)"]
-playingwithfusion = ["robotpy-playingwithfusion (>=2023.0.0,<2024.0.0)"]
-rev = ["robotpy-rev (>=2023.1.1,<2024.0.0)"]
+ctre = ["robotpy-ctre (>=2023.0.0)"]
+navx = ["robotpy-navx (>=2023.0.1)"]
+pathplannerlib = ["robotpy-pathplannerlib (>=2023.0.0)"]
+photonvision = ["robotpy-photonvision (>=2023.1.2)"]
+playingwithfusion = ["robotpy-playingwithfusion (>=2023.0.0)"]
+rev = ["robotpy-rev (>=2023.1.1)"]
 sim = ["robotpy-halsim-ds-socket (==2023.4.1.0)", "robotpy-halsim-ws (==2023.4.1.0)"]
 
 [[package]]
@@ -561,8 +561,8 @@ files = [
 ]
 
 [package.dependencies]
-robotpy-wpimath = ">=2023.4.1,<2023.5.0"
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+robotpy-wpimath = ">=2023.4.1"
+robotpy-wpiutil = ">=2023.4.1"
 
 [[package]]
 name = "robotpy-commands-v2"
@@ -591,7 +591,7 @@ files = [
 ]
 
 [package.dependencies]
-wpilib = ">=2023.4.1,<2023.5.0"
+wpilib = ">=2023.4.1"
 
 [[package]]
 name = "robotpy-ctre"
@@ -620,7 +620,7 @@ files = [
 ]
 
 [package.dependencies]
-wpilib = ">=2023.1.1.0,<2024.0.0"
+wpilib = ">=2023.1.1.0"
 
 [[package]]
 name = "robotpy-hal"
@@ -649,7 +649,7 @@ files = [
 ]
 
 [package.dependencies]
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+robotpy-wpiutil = ">=2023.4.1"
 
 [[package]]
 name = "robotpy-halsim-gui"
@@ -678,10 +678,10 @@ files = [
 ]
 
 [package.dependencies]
-pyntcore = ">=2023.4.1,<2023.5.0"
-robotpy-hal = ">=2023.4.1,<2023.5.0"
-robotpy-wpimath = ">=2023.4.1,<2023.5.0"
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+pyntcore = ">=2023.4.1"
+robotpy-hal = ">=2023.4.1"
+robotpy-wpimath = ">=2023.4.1"
+robotpy-wpiutil = ">=2023.4.1"
 
 [[package]]
 name = "robotpy-installer"
@@ -726,10 +726,10 @@ files = [
 ]
 
 [package.dependencies]
-pyntcore = ">=2023.2.1,<2024.0.0"
-robotpy-apriltag = ">=2023.2.1,<2024.0.0"
-robotpy-wpimath = ">=2023.2.1,<2024.0.0"
-wpilib = ">=2023.2.1,<2024.0.0"
+pyntcore = ">=2023.2.1"
+robotpy-apriltag = ">=2023.2.1"
+robotpy-wpimath = ">=2023.2.1"
+wpilib = ">=2023.2.1"
 
 [[package]]
 name = "robotpy-rev"
@@ -758,9 +758,9 @@ files = [
 ]
 
 [package.dependencies]
-robotpy-wpimath = ">=2023.1.1.0,<2024.0.0"
-robotpy-wpiutil = ">=2023.1.1.0,<2024.0.0"
-wpilib = ">=2023.1.1.0,<2024.0.0"
+robotpy-wpimath = ">=2023.1.1.0"
+robotpy-wpiutil = ">=2023.1.1.0"
+wpilib = ">=2023.1.1.0"
 
 [[package]]
 name = "robotpy-wpilib-utilities"
@@ -776,7 +776,7 @@ files = [
 
 [package.dependencies]
 pyntcore = ">=2023.2.1.4"
-wpilib = ">=2023.2.1,<2024"
+wpilib = ">=2023.2.1"
 
 [[package]]
 name = "robotpy-wpimath"
@@ -805,7 +805,7 @@ files = [
 ]
 
 [package.dependencies]
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+robotpy-wpiutil = ">=2023.4.1"
 
 [[package]]
 name = "robotpy-wpinet"
@@ -834,7 +834,7 @@ files = [
 ]
 
 [package.dependencies]
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+robotpy-wpiutil = ">=2023.4.1"
 
 [[package]]
 name = "robotpy-wpiutil"
@@ -901,10 +901,10 @@ files = [
 ]
 
 [package.dependencies]
-pyntcore = ">=2023.4.1,<2023.5.0"
-robotpy-hal = ">=2023.4.1,<2023.5.0"
-robotpy-wpimath = ">=2023.4.1,<2023.5.0"
-robotpy-wpiutil = ">=2023.4.1,<2023.5.0"
+pyntcore = ">=2023.4.1"
+robotpy-hal = ">=2023.4.1"
+robotpy-wpimath = ">=2023.4.1"
+robotpy-wpiutil = ">=2023.4.1"
 
 [metadata]
 lock-version = "2.0"
